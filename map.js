@@ -48,9 +48,12 @@ const products = [
     {name : "Smart Watch ",price : 1200,color:"black",camera : 18},
     {name : "Snow ",price : 180, color:"white", background:"white"}
 ]
+// console.log(productName);  
 
 const productName = products.map(pn => pn.name)
-// console.log(productName);  
+
+
+
 
 
 
