@@ -38,10 +38,40 @@ const fruit = ["Banana", "Orange", "Apple", "Mango"];
 const f = fruit.entries();
 
 const ages = [32, 33, 16, 40];
-const a = ages.every(age => age >18)
+const a = ages.every(age => age > 18)
 // console.log(a);
 const fillters = ages.filter(f => f >= 18)
 // console.log(fillters);
 
 const indexs = fruit.indexOf("Orange")
-console.log(indexs);
+// console.log(indexs);
+
+
+const checkArray = Array.isArray(!fruit)
+// console.log(checkArray);  | false
+
+const checkTrueArray = Array.isArray(true)
+// console.log(checkTrueArray); | Fase 
+
+fruit.pop()
+// console.log(fruit);
+
+var fruity = ["Banana", "Orange", "Apple", "Mango"];
+Array.prototype.myUcase = function () {
+  for (let i = 0; i < this.length; i++) {
+    this[i] = this[i].toUpperCase();
+  }
+};
+
+
+// console.log(fruity.myUcase());
+
+
+const numbers = [175, 50, 25];
+
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+
