@@ -22,6 +22,7 @@ function displayPost(posts){
    const containers = document.getElementById("posts")
     for(const post of posts){
         const createDiv = document.createElement('div')
+        createDiv.classList.add('post')
         createDiv.innerHTML = `
         <h2>${post.title}</h2>
         <p>${post.body}</p>
